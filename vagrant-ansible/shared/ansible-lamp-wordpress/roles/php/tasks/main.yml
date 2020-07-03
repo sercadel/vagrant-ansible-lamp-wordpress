@@ -1,0 +1,9 @@
+---
+
+- name: Install the PHP packages
+  apt:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  with_items: "{{ php_packages }}"
+  notify: restart apache2

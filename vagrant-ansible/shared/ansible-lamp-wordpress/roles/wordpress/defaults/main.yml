@@ -1,0 +1,15 @@
+---
+
+wp_version: 5.4.2
+wp_url: "https://es.wordpress.org/wordpress-{{ wp_version }}-es_ES.zip"
+wp_download_path: "/tmp/wordpress-{{ wp_version }}.zip"
+wp_webserver_path: "/var/www"
+#wp_webserver_path: "{{ webserver_root }}"
+
+wp_table_prefix: "va_"
+
+dbname: "wordpressdb"
+dbuser: "wpuser"
+dbpass: "wppass"
+dbhost: "192.168.33.14"
+
